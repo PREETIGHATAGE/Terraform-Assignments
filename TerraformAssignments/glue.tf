@@ -1,4 +1,4 @@
-/*module "glue" {
+module "glue" {
   source = "./modules/glue"
   glue_job_name         = var.glue_job_name
   glue_role_name        = var.glue_role_name
@@ -12,4 +12,3 @@
   availability_zone     = var.availability_zone
   tags                  = var.tags
 }
-*/
