@@ -1,4 +1,4 @@
-/*module "athena" {
+module "athena" {
   source              = "./modules/athena"
   name_prefix         = "demo-test"
   database_name       = "sampletestdb"
@@ -8,4 +8,3 @@
   table_name          = "sampletest_table"
   table_data_location = "demo-athena-data-s3-bucket/athena/"
 }
-*/
