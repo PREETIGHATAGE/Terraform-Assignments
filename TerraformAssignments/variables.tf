@@ -1,5 +1,4 @@
 #=============RedShift============================
-/*
 variable "name" {}
 variable "node_type" {}
 variable "cluster_type" {}
@@ -45,6 +44,9 @@ variable "table_data_location" {
 }
 
 #=================BedRock==================
+variable "tags" {
+  type = map(string)
+}
 
 #=================Glue=====================
 variable "glue_job_name" {}
@@ -59,14 +61,9 @@ variable "security_group_id" {}
 variable "availability_zone" {
   type        = string
 }
-*/
-variable "tags" {
-  type = map(string)
-}
 
 #==============SageMaker============================
 variable "subnet_id" {}
 variable "security_group_ids" {
   type = list(string)
 }
-
