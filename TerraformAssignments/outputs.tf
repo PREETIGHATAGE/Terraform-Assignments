@@ -1,7 +1,9 @@
-/*output "redshift_cluster_endpoint" {
+#===============RedShift=========================
+output "redshift_cluster_endpoint" {
   value = module.redshift.redshift_cluster_endpoint
 }
 
+#=================DataZone========================
 output "datazone_bucket_name" {
   value = module.datazone.datazone_bucket_name
 }
@@ -47,11 +49,11 @@ output "bedrock_role_arn" {
 output "bedrock_policy_arn" {
   value = module.bedrock.bedrock_policy_arn
 }
-*/
+
 #================Glue==============================
-/*output "glue_job_name" {
+output "glue_job_name" {
   value = module.glue.glue_job_name
-}*/
+}
 
 #================SageMaker========================
 output "sagemaker_notebook_name" {
