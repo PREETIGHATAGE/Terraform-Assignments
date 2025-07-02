@@ -1,4 +1,4 @@
-/*module "redshift" {
+module "redshift" {
   source = "./modules/redshift"
 
   name                = var.name
@@ -12,4 +12,3 @@
   skip_final_snapshot = var.skip_final_snapshot
   tags                = var.tags
 }
-*/
